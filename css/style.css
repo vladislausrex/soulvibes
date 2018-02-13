@@ -1,0 +1,47 @@
+.header {
+    background: url("../img/background.png") #fff no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 930px;
+}
+.header__row {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.nav {
+
+}
+.link {
+
+}
+.nav__link {
+
+}
+.header__title {
+
+}
+/*MUSIC PLAYER*/
+/*/MUSIC PLAYER*/
+.genres-stations {
+
+}
+.genres-stations__genres {
+    flex-wrap: wrap;
+}
+.btn {
+    border: 1px solid black;
+}
+.genres-stations__genre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.genres-stations__img {
+    margin: 0 auto;
+}
