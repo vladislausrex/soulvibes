@@ -8,22 +8,24 @@
 </head>
 <body>
     <header class="header">
-        <div class="row header__row">
-            <img class="logo" src="img/logo.png" height="30" width="180"/>
-            <nav class="nav">
-                <a class="link nav__link">HOME</a>
-                <a class="link nav__link">GENRES</a>
-                <a class="link nav__link">EVENT</a>
-                <a class="link nav__link">NEWS</a>
-                <a class="link nav__link">CONTACT</a>
-            </nav>
+        <div class="content">
+            <div class="row header__row">
+                <img class="logo" src="img/logo.png" height="30" width="180"/>
+                <nav class="nav">
+                    <a class="link nav__link">HOME</a>
+                    <a class="link nav__link">GENRES</a>
+                    <a class="link nav__link">EVENT</a>
+                    <a class="link nav__link">NEWS</a>
+                    <a class="link nav__link">CONTACT</a>
+                </nav>
+            </div>
+            <h1 class="header__title">High Quality Internet Music Stations</h1>
         </div>
-        <h1 class="header__title">High Quality Internet Music Stations</h1>
     </header>
     <div class="page">
         <div class="music-player"></div>
         <div class="genres-stations">
-            <h2 class="genres-stations__title">Genres Stations</h2>
+            <h2 class="highlight genres-stations__highlight">Genres Stations</h2>
             <div class="row genres-stations__genres">
                 <a class="btn genres-stations__genre">
                     <img class="genres-stations__img" src="img/tranding.png" height="71" width="67"/>
@@ -58,18 +60,20 @@
                     <span class="genres-stations__text">Reggae</span>
                 </a>
             </div> <!--вопрос по коду-->
-            <!--<a class="btn genres-stations__btn"></a>-->
+            <a class="btn genres-stations__btn">LOAD MORE</a>
         </div>
         <div class="upcoming-events">
-            <h2 class="h2 upcoming-events__title">Upcoming Events</h2>
+            <div class="row">
+                <h2 class="highlight upcoming-events__highlight">Upcoming Events</h2>
+            </div>
             <div class="event">
                 <div class="event__event-item">
-                    <span class="event__date">Wednesday / 22 Dec 2017 / 12:00 PM</span>
+                    <p class="event__date">Wednesday / 22 Dec 2017 / 12:00 PM</p>
                     <h3 class="event__name">Linkin Park</h3>
                     <p class="event__place">Ziggo Dome<br>De Passage 100, Amsterdam< Netherlands</p>
                 </div>
                 <div class="event__event-item">
-                    <span class="event__date">Wednesday / 22 Dec 2017 / 12:00 PM</span>
+                    <p class="event__date">Wednesday / 22 Dec 2017 / 12:00 PM</p>
                     <h3 class="event__name">Burger kill</h3>
                     <p class="event__place">Ziggo Dome<br>De Passage 100, Amsterdam< Netherlands</p>
                 </div>
@@ -77,33 +81,34 @@
             </div>
         </div>
         <div class="news">
-            <div class="row">
+            <h2 class="highlight news__highlight">Latest News</h2>
+            <div class="row news__row">
                 <article class="news__article">
-                    <span class="news__date">21 MARCH 2017</span>
+                    <p class="news__date">21 MARCH 2017</p>
                     <h3 class="news__title">Donec ac pellentesque justo, quis rutrum tortor</h3>
                     <p class="news__text">
                         Lorem ipsun dolor sit amet, consectetur adipscing elit. Nam
-                        feugiat eget eros bibendum. Suspendisse finibus ultricies
+                        feugiat eget eros eget bibendum. Suspendisse finibus ultricies
                         dapibus. Nam sed imperdiet diam
                     </p>
                     <a class="btn news__btn">READ MORE</a>
                 </article>
                 <article class="news__article">
-                    <span class="news__date">21 MARCH 2017</span>
+                    <p class="news__date">21 MARCH 2017</p>
                     <h3 class="news__title">Donec ac pellentesque justo, quis rutrum tortor</h3>
                     <p class="news__text">
                         Lorem ipsun dolor sit amet, consectetur adipscing elit. Nam
-                        feugiat eget eros bibendum. Suspendisse finibus ultricies
+                        feugiat eget eros eget bibendum. Suspendisse finibus ultricies
                         dapibus. Nam sed imperdiet diam
                     </p>
                     <a class="btn news__btn">READ MORE</a>
                 </article>
                 <article class="news__article">
-                    <span class="news__date">21 MARCH 2017</span>
+                    <p class="news__date">21 MARCH 2017</p>
                     <h3 class="news__title">Donec ac pellentesque justo, quis rutrum tortor</h3>
                     <p class="news__text">
                         Lorem ipsun dolor sit amet, consectetur adipscing elit. Nam
-                        feugiat eget eros bibendum. Suspendisse finibus ultricies
+                        feugiat eget eros eget bibendum. Suspendisse finibus ultricies
                         dapibus. Nam sed imperdiet diam
                     </p>
                     <a class="btn news__btn">READ MORE</a>
@@ -111,20 +116,24 @@
             </div>
         </div>
         <div class="contact-us">
-            <h2 class="h2 contact-us__title">Contact Us</h2>
+            <div class="content">
+                <h2 class="highlight contact-us__highlight">Contact Us</h2>
+            </div>
             <div class="subscribe">
-                <h2 class="subscribe__h2">Join Our Community</h2>
-                <p class="subscribe__text">
-                    Be among the first to hear about our new tracks, events, news
-                    and so much more!
-                </p>
-                <form class="subscribe-form">
-                    <input type="email" placeholder="Your email address">
-                    <input type="button" value="SUBSCRIBE">
-                </form>
+                <div class="content">
+                    <h2 class="subscribe__h2">Join Our Community</h2>
+                    <p class="subscribe__text">
+                        Be among the first to hear about our new tracks, events, news
+                        and so much more!
+                    </p>
+                    <form class="subscribe-form">
+                        <input class="subscribe-form__email" type="email" placeholder="Your email address">
+                        <input class="subscribe-form__button" type="button" value="SUBSCRIBE">
+                    </form>
+                </div>
             </div>
         </div>
-        <footer class="footer">
+        <footer class="footer row">
             <span class="copyright">
                 Copyright &#9400 2017 soulvibes. All right reserved
             </span>
