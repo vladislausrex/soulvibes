@@ -1,18 +1,18 @@
 .header {
     background: url("../img/background.png") #fff no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
+    background-position: -20px 0;
 }
 .row {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    max-width: 930px;
+    max-width: 940px;
 }
 .header__row {
     justify-content: space-between;
     align-items: flex-end;
+    padding-top: 28px;
 }
 .nav {
 
@@ -21,18 +21,47 @@
 
 }
 .nav__link {
-
+    font-family: 'montserrat', sans-serif;
+    font-size: 14px;
+    padding-left: 42px;
+    color: #fff;
+    letter-spacing: 0.4px;
 }
 .header__title {
-
+    font-family: 'lora-bold', sans-serif;
+    font-size: 72px;
+    text-shadow: 0 1px 2px black;
+    padding-top: 120px;
+    padding-left: 207px;
+    padding-bottom: 150px;
+    color: #fff;
+    letter-spacing: 3.6px;
+    line-height: 1.2;
+    max-width: 570px;
+    margin: 0;
 }
 /*MUSIC PLAYER*/
+.music-player {
+    height: 80px;
+    background-color: #B50B1E;
+    transform: translateY(-37px);
+}
 /*/MUSIC PLAYER*/
 .genres-stations {
-
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 940px;
+}
+.genres-stations__title {
+    font-family: montserrat-bold,sans-serif;
+    font-size: 36px;
+    margin-top: 14px;
+    margin-bottom: 40px;
 }
 .genres-stations__genres {
     flex-wrap: wrap;
+    justify-content:  space-between;
 }
 .btn {
     border: 1px solid black;
@@ -40,8 +69,38 @@
 .genres-stations__genre {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: space-evenly;
+    align-items:  center;
+    width: 218px;
+    max-height: 177px;
+    margin: 15px 0 10px;
 }
 .genres-stations__img {
-    margin: 0 auto;
+    /* padding-top: 37px; */
+    /* padding-bottom: 30px; */
+    /* padding: 11px; */
+    /* margin:  0 auto; */
+}
+.genres-stations__text {
+    font-family: montserrat-bold, sans-serif;
+    font-size: 18px;
+    /* padding: 5px 0 21px; */
+    padding-bottom: 25px;
+    /* padding-top: 16px; */
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat.ttf');
+}
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url('../fonts/montserrat-bold.ttf');
+}
+@font-face {
+    font-family: 'lora-bold';
+    src: url('../fonts/lora-bold.ttf');
+}
+@font-face {
+    font-family: 'caviardreams-bold';
+    src: url('../fonts/caviardreams-bold.ttf');
 }
