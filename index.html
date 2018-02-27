@@ -23,7 +23,36 @@
         </div>
     </header>
     <div class="page">
-        <div class="music-player"></div>
+        <div class="music-player">
+            <audio id="music" preload="auto">
+                <source src="music/audio1.mp3" type="audio/mpeg">
+            </audio>
+            <div class="music-player__form row">
+                <button type="button" id="pButton"  class="music-player__btn music-player__play">
+                    <img src="img/play.png" height="58" width="58"/>
+                </button>
+                <div class="now-play">
+                    <span class="now-play__title" id="nptitle">title</span>
+                    <span class="now-play__time" id="nptime"></span>
+                    <input title="input" type="range" class="music-player__range" id="range" max="" value="0" oninput=""> <!--test-->
+                </div>
+                <button type="button" id="mute" class="music-player__btn music-player__mute">
+                    <img src="img/volume.png" height="40" width="40"/>
+                </button>
+                <button type="button" id="next" class="music-player__btn music-player__next">
+                    <img src="img/next.png" height="40" width="40"/>
+                </button>
+                <button type="button" id="previous" class="music-player__btn music-player__previous">
+                    <img src="img/prev.png" height="40" width="40"/>
+                </button>
+                <button type="button" id="loop" class="music-player__btn music-player__loop">
+                    <img src="img/repeat.png" height="40" width="40"/>
+                </button>
+                <button type="button" id="list" class="music-player__btn music-player__list">
+                    <img src="img/playlist.png" height="40" width="40"/>
+                </button>
+            </div>
+        </div>
         <div class="genres-stations">
             <h2 class="highlight genres-stations__highlight">Genres Stations</h2>
             <div class="row genres-stations__genres">
@@ -151,5 +180,7 @@
             </ul>
         </footer>
     </div>
+
+    <script src="js/audioplayer.js"></script>
 </body>
 </html>
